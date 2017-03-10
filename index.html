@@ -4,239 +4,42 @@
 <meta charset="UTF-8">
 <title>Title of the document</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
-	<h1>JavaScript</h1>
-	<input type="text" id="input1">
-	<input type="text" id="input2">
-	<button id="run-button">RUN...!!!</button>
-	<div id="container"></div>
-	
-<script>
+	<div class="container">
 
-	//Single line comment
-	/*
-		Multi
-		lines
-		Comment
-	*/
-	
-	
-	
-	
-	
-	// ###############################################	
-	// VARIABLE TYPES ################################
-	var integer = 3; // any number
-	var string = 'I like cakes'; // also works with double quote symbol.
-	var boolean = true; // true or false
-	
-	var cheese; // cheese = undefined
-	var donut = null; // null != 0, "0", false or undefined.
-	
-	// List of values
-	var jsArray = [1, 'cat', false];
-	
-	// List of key-value pairs
-	var jsObject = {
-		number: 1,
-		pet: 'cat',
-		isTrue: false
-	}
-	
-	// Normal function
-	var jsFunction = function () {
-		alert();
-	}; //jsFunction();
-	
-	
-	var json = JSON.stringify(jsObject); // string
-	
-	
-	
-	
-	
-	// ###############################################
-	// FUNCTION ######################################
-	function someFunction() {
-		alert();
-	}
-	
-	function alertMessage(msg) {
-		
-		// msg is a variable
-		
-		alert(msg);
-	}
-	
-	//alertMessage("msg");
-	
-	
-	
-	
-	
-	// ###############################################
-	// CONDITIONAL ###################################
-	// --> IF, SWITCH, FOR, WHILE
-	
-	// Only runs when the condition is true
-	var isLoggedIn = false;
-	
-	if(isLoggedIn) {
-		// Shortcut for (isLoggedIn == true)
-	}
-	
-	if(!isLoggedIn) {
-		// Shortcut for (isLoggedIn != true)
-	}
-	
-	var LoginAttempts = 0;
-	
-	if (LoginAttempts == 0) {
-		
-		// Do nothing
-		LoginAttempts++;
-		
-	} else if (LoginAttempts <= 5) {
-		
-		// Give Warning
-		LoginAttempts = LoginAttempts + 1;
-		
-	} else {
-		
-		// Block Access
-		LoginAttempts += 1;
-		
-	}
-	
-	var welcomeMsg = isLoggedIn == true ? 'Welcome back' : 'Hello, Please log in';
-	
-	
-	
-	
-	
-	// ###############################################
-	// COMPARISON OPERATORS ##########################
-	
-	// For multiple condition, use && (AND) or || (OR)
-	
-	var a = 1;
-	var b = "1";
-	
-	if(a == b) { // true
-		// code will run
-	}
-	
-	if(a === b) { // false
-		// code won't run
-	}
-	
-	
-	
-	
-	// ###############################################
-	// CONCATENATION #################################
-	
-	var username = 'xxx123';
-	var template = 'Hello ' + username + ', welcome back...';
-	
-	
-	
-	
-	
-	// ###############################################
-	// SHORTCUTS #####################################
-	
-	var aaa = 0;
-	
-	aaa++; // --> aaa = aaa + 1;
-	aaa--; // --> aaa = aaa - 1;
-	
-	
-	aaa += 5; // --> aaa = aaa + 5;
-	aaa -= 5; // --> aaa = aaa - 5;
-	aaa *= 5; // --> aaa = aaa * 5;
-	aaa /= 5; // --> aaa = aaa / 5;
-	aaa %= 5; // --> aaa = aaa % 5;
-	
-	
-	
-	
-	
-	
-	// ###############################################
-	// OBJECT ORIENTED APPROACH ######################
-	
-	
-	var calculator = {
-		firstNum : $("input1").val(),  // ignore the jquery syntax
-		secondNum : $("input2").val(),
-		thirdNum : 7,
-		
-		add : function (a, b) {
-			alert(a + b);
-		},
-		
-		min : function (a, b) {
-			alert(a - b);
-		},
-		
-		times : function (a, b) {
-			alert(a * b);
-		},
-		
-		divide : function (a, b) {
-			alert(a / b);
-		}
-	}
-	
-	//calculator.add(5,10);
 
-	
-	// ###############################################
-	// jQuery ########################################
-	
-	
-	$("#container").text("Hot chocolate...");
-	
-	document.getElementById("container").innerHTML = "Hot chocolate...";
-	
-	
-	
-	
-	// ###############################################
-	// CLASS #########################################
-	
-</script>
+		<table class="table table-striped">
+			<tr>
+				<th>
+					Example Title
+				</th>
+				<th>
+					2
+				</th>
+				<th>
+					3
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Example Title a
+				</td>
+				<td>
+					2b
+				</td>
+				<td>
+					3c
+				</td>
+			</tr>
+		</table>
+	</div>
+
+<script></script>
+
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
